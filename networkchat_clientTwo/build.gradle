@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'idea'
+}
+
+group 'ru.netology'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility=JavaVersion.VERSION_15
+targetCompatibility=JavaVersion.VERSION_15
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.14.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+    testCompile 'org.mockito:mockito-core:3.11.2'
+}
+
+test {
+    useJUnitPlatform()
+}

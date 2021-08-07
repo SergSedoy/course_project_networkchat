@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+    <Properties>
+        <Property name="basePath">D:\\logs\\client2</Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="fileLogger" fileName="${basePath}/file.log" filePattern="${basePath}/file-%d{yyyy-MM-dd}.log" immediateFlush="true">
+            <PatternLayout>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>
+
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <appender-ref ref="fileLogger" />
+        </Root>
+    </Loggers>
+</Configuration>

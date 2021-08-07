@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/networkchat_client" />
+        <option name="gradleJvm" value="15" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/networkchat_client" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/networkchat_clientTwo" />
+        <option name="gradleJvm" value="15" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/networkchat_clientTwo" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/networkchat_server" />
+        <option name="gradleJvm" value="15" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/networkchat_server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

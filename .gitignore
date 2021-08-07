@@ -1,0 +1,12 @@
+# Project exclude paths
+/networkchat_client/.gradle/
+/networkchat_client/build/
+/networkchat_client/build/classes/java/main/
+/networkchat_client/build/classes/java/test/
+/networkchat_clientTwo/.gradle/
+/networkchat_clientTwo/build/
+/networkchat_clientTwo/build/classes/java/main/
+/networkchat_server/.gradle/
+/networkchat_server/build/
+/networkchat_server/build/classes/java/main/
+/networkchat_server/build/classes/java/test/
