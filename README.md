@@ -11,6 +11,6 @@
 * Выбор имени для участия в чате;
 * Каждое сообщение участников записывается в файл логирования.
 ### В проекте используются технологии:
-:white_check_mark: Сборщик пакетов "gradle";  
+:white_check_mark: Сборщик проектов "gradle";  
 :white_check_mark: Фреймворк "log4j";  
-:white_check_mark: Фреймворк "Mockito" и JUnit.
+:white_check_mark: Фреймворки "Mockito" и JUnit.
