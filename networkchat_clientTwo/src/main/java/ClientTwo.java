@@ -12,8 +12,9 @@ public class ClientTwo {
     }
 
     public static void main(String[] args) {
-
-        int serverPort = identifyPort();
+        ConnectionSettings connectionSettings = new ConnectionSettings();
+        connectionSettings.readFileSettings();
+        int serverPort = connectionSettings.getServerPort();
 
         try (Socket client = new Socket("localhost", serverPort);
              BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
@@ -39,18 +40,5 @@ public class ClientTwo {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    private static int identifyPort() {
-        String port = null;
-        try {
-            FileReader fileReader = new FileReader("C:\\Users\\user\\IdeaProjects\\course project\\networkchat_server\\src\\main\\resources\\settings.txt");
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            port = bufferedReader.readLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        int serverPort = Integer.parseInt(port);
-        return serverPort;
     }
 }
