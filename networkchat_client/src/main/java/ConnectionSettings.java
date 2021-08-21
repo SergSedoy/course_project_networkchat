@@ -27,6 +27,5 @@ public class ConnectionSettings {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(CHAT_NAME);
     }
 }
